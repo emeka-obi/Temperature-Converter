@@ -129,6 +129,7 @@ def temp_converter():
         ['Delisle', '[°C] = 100 − [°De] × ​2⁄3'],
         ['Newton', 	'[°C] = [°N] × ​100⁄33'],
         ])
+    
     put_text('Fahrenheit')
     put_table([
         ['From',  'Fahrenheit'],
@@ -196,7 +197,6 @@ def temp_converter():
 
 
 if __name__ == "__main__":
-    temp_converter()
-
+    start_server(temp_converter, debug=True, port=80, cdn=False)
 
 # #   http://localhost:80/
