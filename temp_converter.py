@@ -182,7 +182,7 @@ def temp_converter():
                   input("Enter the temperature value", type=NUMBER, name='temp_value'),
                   select(label='Select the Temperature unit you wish to convert to', options=temp_units, value='Arial', name='output_temp_unit'),
                   ])
-    #callling the tempperature conversion that was defined earlier
+    #calling the tempperature conversion that was defined earlier
     temp_converter_calculator(temp_info['input_temp_unit'], temp_info['temp_value'], temp_info['output_temp_unit'])
 
     put_markdown('The source code for this application can be found [here] ()')
